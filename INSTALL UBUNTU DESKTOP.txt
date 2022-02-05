@@ -1,0 +1,31 @@
+CARA INSTALL UBUNTU DESKTOP
+
+1.	Klik Compute Engine > Instance VM
+2.	Jalankan terminal konsol VM dengan cara menu klik dropdown pada kolom SSH > pilih Buka di jendela browser
+3.	Switch user root: 
+        sudo su root. Setelah berhasil login sebagai root, lekas ubah passwordnya root dengan perintah passwd
+4.	Edit konfigurasi SSH agar bisa login tanpa ssh key. nano /etc/ssh/sshd_config
+        Sesuaikan baris ini:
+
+        PermitRootLogin yes
+        PasswordAuthentication yes
+
+5. Simpan dan restart openSSH daemon:  systemctl restart sshd
+
+6. LOGIN PUTY
+7. sudo apt update
+8. sudo apt install ubuntu-desktop
+
+9. download nomachine di web
+   
+   wget https://download.nomachine.com/download/7.7/Linux/nomachine_7.7.4_1_amd64.deb
+  
+
+10.apt install ./nomachine_7.7.4_1_amd64.deb
+
+11. adduser mrdev
+12. usermod -a -G sudo,adm mrdev
+13. reboot
+14. open port 4000
+15. install nomachine untuk window
+16. login pakai ip
