@@ -1,0 +1,36 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
+Allow: /
+
+Sitemap: http://www.example.com/sitemap.xml
+
+
+
+
+
+Cara buat 
+
+1.Buat file dengan nama robots.txt
+2.Berikan akses 755 ke file robots.txt
+3.Upload robots.txt ke ke website anda 
+4.Test robots.txt file anda
+
+
+Test 
+https://www.google.com/webmasters/tools/robots-testing-tool?siteUrl=https://www.namadomain.com/
+
+
+
+Untuk blok halaman agar tidak di index google
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title></title>
+		<meta name="robots" content="noindex">
+	</head>
+	<body>
+	
+	</body>
+	</html>	
